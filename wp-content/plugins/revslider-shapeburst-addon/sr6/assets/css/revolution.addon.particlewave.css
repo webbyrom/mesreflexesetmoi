@@ -1,0 +1,21 @@
+/* 
+ * @author    ThemePunch <info@themepunch.com>
+ * @link      http://www.themepunch.com/
+ * @copyright 2022 ThemePunch
+*/
+
+.tp-shapeburst svg a,
+.tp-shapeburst svg d,
+.tp-shapeburst svg g,
+.tp-shapeburst svg polygon,
+.tp-shapeburst svg rect,
+.tp-shapeburst svg line
+.tp-shapeburst svg text,
+.tp-shapeburst svg circle,
+.tp-shapeburst svg path
+{		
+		transition: none;
+
+}
+
+#tp_svg_gradients {   visibility: hidden; position: absolute; z-index: 0; top:0px; left:0px; pointer-events: none}

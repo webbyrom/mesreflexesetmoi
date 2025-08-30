@@ -1,0 +1,116 @@
+/*** toutes les Mixins ****/
+@use '../abstracts/variables' as *; //poiur eviter les erreurs de compilation 
+
+@mixin display-centre-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@mixin display-centre-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin display-body-home {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin display-home-prez {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+@mixin display-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+@mixin display-column-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+@mixin display-inline {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*** mixins titre ***/
+@mixin title-h1 {
+    font-size:xx-large;
+    font-weight: bold;
+    
+}
+
+@mixin button-link-page {
+    border: 1px solid $GreenDeeper;
+    padding: 0.6rem;
+    border-radius: 1rem;
+    background-color: transparent;
+    box-shadow: none;
+    transition:  box-shadow 1s ease-in-out;
+    
+}
+/**** Mixins Responsives ****/
+//téléphone
+$phone: 576px;
+// tablette portrait
+$tablet_p: 768px;
+//tablet
+$tablet: 992px;
+// desktop
+$desktop: 1200px;
+
+@mixin phone {
+    @media screen and (max-width: #{$phone}) {
+        @content;
+    }
+}
+
+@mixin tablet-P {
+    @media screen and (max-width: #{$tablet-P}) {
+        @content;
+    }
+}
+
+
+
+@mixin tablet {
+    @media screen and (max-width: #{$tablet}) {
+        @content;
+    }
+}
+
+
+
+@mixin desktop {
+    @media screen and (max-width: #{$desktop}) {
+        @content;
+    }
+}

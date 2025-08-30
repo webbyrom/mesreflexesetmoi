@@ -1,0 +1,231 @@
+/******** fichiers des polices du site Mes réflexes et moi ********/
+
+// Fonts Jost 
+
+@font-face {
+          font-family: 'Jost-Black';
+          src: url('./../fonts/jost/Jost-Black.eot');
+          src: url('./../fonts/jost/Jost-Black.eot?#iefix') format('embedded-opentype'),
+          //url('./../fonts/jost/Jost-Black.svg#Jost-Black') format('svg'),
+          url('./../fonts/jost/Jost-Black.ttf') format('truetype'),
+          url('./../fonts/jost/Jost-Black.woff') format('woff'),
+          url('./../fonts/jost/Jost-Black.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+          font-family: 'Jost-BlackItalic';
+          src: url('./../fonts/jost/Jost-BlackItalic.eot');
+          src: url('./../fonts/jost/Jost-BlackItalic.eot?#iefix') format('embedded-opentype'),
+          //url('./../fonts/jost/Jost-BlackItalic.svg#Jost-BlackItalic') format('svg'),
+          url('./../fonts/jost/Jost-BlackItalic.ttf') format('truetype'),
+          url('./../fonts/jost/Jost-BlackItalic.woff') format('woff'),
+          url('./../fonts/jost/Jost-BlackItalic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+          font-family: 'Jost-Bold';
+          src: url('./../fonts/jost/Jost-Bold.eot');
+          src: url('./../fonts/jost/Jost-Bold.eot?#iefix') format('embedded-opentype'),
+         // url('./../fonts/jost/Jost-Bold.svg#Jost-Bold') format('svg'),
+          url('./../fonts/jost/Jost-Bold.ttf') format('truetype'),
+          url('./../fonts/jost/Jost-Bold.woff') format('woff'),
+          url('./../fonts/jost/Jost-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+          font-family: 'Jost-ExtraBold';
+          src: url('./../fonts/jost/Jost-ExtraBold.eot');
+          src: url('./../fonts/jost/Jost-ExtraBold.eot?#iefix') format('embedded-opentype'),
+         // url('./../fonts/jost/Jost-ExtraBold.svg#Jost-ExtraBold') format('svg'),
+          url('./../fonts/jost/Jost-ExtraBold.ttf') format('truetype'),
+          url('./../fonts/jost/Jost-ExtraBold.woff') format('woff'),
+          url('./../fonts/jost/Jost-ExtraBold.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+@font-face {
+          font-family: 'Jost-ExtraBoldItalic';
+          src: url('./../fonts/jost/Jost-ExtraBoldItalic.eot');
+          src: url('./../fonts/jost/Jost-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+         // url('./../fonts/jost/Jost-ExtraBoldItalic.svg#Jost-ExtraBoldItalic') format('svg'),
+          url('./../fonts/jost/Jost-ExtraBoldItalic.ttf') format('truetype'),
+          url('./../fonts/jost/Jost-ExtraBoldItalic.woff') format('woff'),
+          url('./../fonts/jost/Jost-ExtraBoldItalic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+          font-family: 'Jost-ExtraLight';
+          src: url('./../fonts/jost/Jost-ExtraLight.eot');
+          src: url('./../fonts/jost/Jost-ExtraLight.eot?#iefix') format('embedded-opentype'),
+         // url('./../fonts/jost/Jost-ExtraLight.svg#Jost-ExtraLight') format('svg'),
+          url('./../fonts/jost/Jost-ExtraLight.ttf') format('truetype'),
+          url('./../fonts/jost/Jost-ExtraLight.woff') format('woff'),
+          url('./../fonts/jost/Jost-ExtraLight.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+          font-family: 'Jost-ExtraLightItalic';
+          src: url('./../fonts/jost/Jost-ExtraLightItalic.eot');
+          src: url('./../fonts/jost/Jost-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+         // url('./../fonts/jost/Jost-ExtraLightItalic.svg#Jost-ExtraLightItalic') format('svg'),
+          url('./../fonts/jost/Jost-ExtraLightItalic.ttf') format('truetype'),
+          url('./../fonts/jost/Jost-ExtraLightItalic.woff') format('woff'),
+          url('./../fonts/jost/Jost-ExtraLightItalic.woff2') format('woff2');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+          font-family: 'Jost-Italic-VariableFont_wght';
+          src: url('./../fonts/jost/Jost-Italic-VariableFont_wght.eot');
+          src: url('./../fonts/jost/Jost-Italic-VariableFont_wght.eot?#iefix') format('embedded-opentype'),
+         // url('./../fonts/jost/Jost-Italic-VariableFont_wght.svg#Jost-Italic-VariableFont_wght') format('svg'),
+          url('./../fonts/jost/Jost-Italic-VariableFont_wght.ttf') format('truetype'),
+          url('./../fonts/jost/Jost-Italic-VariableFont_wght.woff') format('woff'),
+          url('./../fonts/jost/Jost-Italic-VariableFont_wght.woff2') format('woff2');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Jost-Italic';
+    src: url('./../fonts/jost/Jost-Italic.eot');
+    src: url('./../fonts/jost/Jost-Italic.eot?#iefix') format('embedded-opentype'),
+    //url('./../fonts/jost/Jost-Italic.svg#Jost-Italic') format('svg'),
+    url('./../fonts/jost/Jost-Italic.ttf') format('truetype'),
+    url('./../fonts/jost/Jost-Italic.woff') format('woff'),
+    url('./../fonts/jost/Jost-Italic.woff2') format('woff2');
+font-weight: 100;
+font-style: italic;
+}
+
+@font-face {
+    font-family: 'Jost-Light';
+    src: url('./../fonts/jost/Jost-Light.eot');
+    src: url('./../fonts/jost/Jost-Light.eot?#iefix') format('embedded-opentype'),
+   // url('./../fonts/jost/Jost-Light.svg#Jost-Light') format('svg'),
+    url('./../fonts/jost/Jost-Light.ttf') format('truetype'),
+    url('./../fonts/jost/Jost-Light.woff') format('woff'),
+    url('./../fonts/jost/Jost-Light.woff2') format('woff2');
+font-weight: 100;
+font-style: normal;
+}
+@font-face {
+    font-family: 'Jost-Regular';
+    src: url('./../fonts/jost/Jost-Regular.eot');
+    src: url('./../fonts/jost/Jost-Regular.eot?#iefix') format('embedded-opentype'),
+   // url('./../fonts/jost/Jost-Regular.svg#Jost-Regular') format('svg'),
+    url('./../fonts/jost/Jost-Regular.ttf') format('truetype'),
+    url('./../fonts/jost/Jost-Regular.woff') format('woff'),
+    url('./../fonts/jost/Jost-Regular.woff2') format('woff2');
+font-weight: 300;
+font-style: normal;
+}
+
+/// Font Lexend 
+@font-face {
+    font-family: 'Lexend-Black';
+    src: url('./../fonts/lexend/Lexend-Black.eot');
+    src: url('./../fonts/lexend/Lexend-Black.eot?#iefix') format('embedded-opentype'),
+    //url('./../fonts/lexend/Lexend-Black.svg#Lexend-Black') format('svg'),
+    url('./../fonts/lexend/Lexend-Black.ttf') format('truetype'),
+    url('./../fonts/lexend/Lexend-Black.woff') format('woff'),
+    url('./../fonts/lexend/Lexend-Black.woff2') format('woff2');
+font-weight: 400;
+font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lexend-Bold';
+    src: url('./../fonts/lexend/Lexend-Bold.eot');
+    src: url('./../fonts/lexend/Lexend-Bold.eot?#iefix') format('embedded-opentype'),
+   // url('./../fonts/lexend/Lexend-Bold.svg#Lexend-Bold') format('svg'),
+    url('./../fonts/lexend/Lexend-Bold.ttf') format('truetype'),
+    url('./../fonts/lexend/Lexend-Bold.woff') format('woff'),
+    url('./../fonts/lexend/Lexend-Bold.woff2') format('woff2');
+font-weight: 700;
+font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lexend-ExtraBold';
+    src: url('./../fonts/lexend/Lexend-ExtraBold.eot');
+    src: url('./../fonts/lexend/Lexend-ExtraBold.eot?#iefix') format('embedded-opentype'),
+   // url('./../fonts/lexend/Lexend-ExtraBold.svg#Lexend-ExtraBold') format('svg'),
+    url('./../fonts/lexend/Lexend-ExtraBold.ttf') format('truetype'),
+    url('./../fonts/lexend/Lexend-ExtraBold.woff') format('woff'),
+    url('./../fonts/lexend/Lexend-ExtraBold.woff2') format('woff2');
+font-weight: 900;
+font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lexend-ExtraLight';
+    src: url('./../fonts/lexend/Lexend-ExtraLight.eot');
+    src: url('./../fonts/lexend/Lexend-ExtraLight.eot?#iefix') format('embedded-opentype'),
+    //url('./../fonts/lexend/Lexend-ExtraLight.svg#Lexend-ExtraLight') format('svg'),
+    url('./../fonts/lexend/Lexend-ExtraLight.ttf') format('truetype'),
+    url('./../fonts/lexend/Lexend-ExtraLight.woff') format('woff'),
+    url('./../fonts/lexend/Lexend-ExtraLight.woff2') format('woff2');
+font-weight: 100;
+font-style: normal;
+}
+@font-face {
+    font-family: 'Lexend-Regular';
+    src: url('./../fonts/lexend/Lexend-Regular.eot');
+    src: url('./../fonts/lexend/Lexend-Regular.eot?#iefix') format('embedded-opentype'),
+    //url('./../fonts/lexend/Lexend-Regular.svg#Lexend-Regular') format('svg'),
+    url('./../fonts/lexend/Lexend-Regular.ttf') format('truetype'),
+    url('./../fonts/lexend/Lexend-Regular.woff') format('woff'),
+    url('./../fonts/lexend/Lexend-Regular.woff2') format('woff2');
+font-weight: 100;
+font-style: normal;
+}
+
+/// Fonts Onest
+@font-face {
+    font-family: 'Onest-Black';
+    src: url('./../fonts/onest/Onest-Black.eot');
+    src: url('./../fonts/onest/Onest-Black.eot?#iefix') format('embedded-opentype'),
+   // url('./../fonts/onest/Onest-Black.svg#Onest-Black') format('svg'),
+    url('./../fonts/onest/Onest-Black.ttf') format('truetype'),
+    url('./../fonts/onest/Onest-Black.woff') format('woff'),
+    url('./../fonts/onest/Onest-Black.woff2') format('woff2');
+font-weight: 400;
+font-style: normal;
+}
+
+@font-face {
+    font-family: 'Onest-Bold';
+    src: url('./../fonts/onest/Onest-Bold.eot');
+    src: url('./../fonts/onest/Onest-Bold.eot?#iefix') format('embedded-opentype'),
+    //url('./../fonts/onest/Onest-Bold.svg#Onest-Bold') format('svg'),
+    url('./../fonts/onest/Onest-Bold.ttf') format('truetype'),
+    url('./../fonts/onest/Onest-Bold.woff') format('woff'),
+    url('./../fonts/onest/Onest-Bold.woff2') format('woff2');
+font-weight: 700;
+font-style: normal;
+}
+
+@font-face {
+    font-family: 'Onest-Regular';
+    src: url('./../fonts/onest/Onest-Regular.eot');
+    src: url('./../fonts/onest/Onest-Regular.eot?#iefix') format('embedded-opentype'),
+    //url('./../fonts/onest/Onest-Regular.svg#Onest-Regular') format('svg'),
+    url('./../fonts/onest/Onest-Regular.ttf') format('truetype'),
+    url('./../fonts/onest/Onest-Regular.woff') format('woff'),
+    url('./../fonts/onest/Onest-Regular.woff2') format('woff2');
+font-weight: 200;
+font-style: normal;
+}

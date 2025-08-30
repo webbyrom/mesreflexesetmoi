@@ -1,0 +1,358 @@
+/***** Fichier Responsive ******/
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+
+/*** Début réponsive du site ****/
+@include desktop() {
+    body {
+        transition: margin-left 0.4s ease-in-out;
+    }
+
+    .home,
+    .page-template,
+    .single,
+    .archive,
+    .blog {
+        .container-fluid {
+            --bs-gutter-x: 0.5rem ;
+        }
+        .Mrm-nav-menu {
+            position: relative;
+            z-index: 3;
+            width: 100vw;
+            @include display-inline;
+
+            .nav-logo {
+                width: 8rem;
+                //height: 135px;
+                left: 0;
+
+                .logo-img-header {
+                    width: 6rem;
+                    position: relative;
+                }
+            }
+
+            .Mrm-menu-icon {
+                position: relative;
+                margin-left: 20px;
+                margin-right: 20px;
+                border: none;
+                @include display-body-home;
+                background-color: $primaryOrange;
+                width: 54px;
+                height: 54px;
+                border-radius: 50%;
+                transition: transform 0.6s ease-in-out;
+
+                .Mrm-respon-icon1 {
+                    width: 22px;
+                    height: 2px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    display: block;
+                    border-radius: 5px;
+                    transition: background 0.6s, transform 0.6s;
+                    background-color: white;
+                    transform: translateX(-50%) translateY(-50%);
+
+                    &::before,
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color: white;
+                        display: block;
+                        border-radius: 5px;
+                        width: 22px;
+                        height: 2px;
+                        transform: translateY(-6px);
+                    }
+
+                    &::after {
+                        transform: translateY(6px);
+                    }
+
+                }
+
+                &:hover {
+                    span::before {
+                        transform: translateY(-8px);
+                    }
+
+                    span::after {
+                        transform: translateY(8px);
+                    }
+                }
+
+                &.Mrm-opened {
+                    transform: rotate(180deg);
+
+                    //transform-origin: center center;
+                    span {
+                        background: transparent;
+                        //transform-origin: center center;
+                    }
+
+                    span::before {
+                        transform: translateY(0) rotate(45deg);
+                    }
+
+                    span::after {
+                        transform: translateY(0) rotate(-45deg);
+                    }
+                }
+            }
+
+            .Mrm-collapse {
+                position: fixed;
+                width: 18rem;
+                opacity: 0;
+                top: 0;
+                bottom: 0;
+                left: -15.625rem;
+                height: 100vh;
+                transition: 0.3s ease-in-out, opacity 0.3s ease-in-out;
+                display: flex;
+                flex-direction: column;
+                background-color: $GreenDeeper;
+
+                .Mrm-primary-menu-nav {
+                    padding-top: 3rem;
+                    padding-left: 0;
+                    color: black;
+                    font-size: x-large;
+                    height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    align-content: center;
+                    justify-content: flex-start !important;
+                    align-items: center;
+                    background-color: $GreenDeeper;
+
+                    li {
+                        margin-bottom: 2rem;
+                    }
+
+                }
+
+            }
+        }
+
+    }
+
+    .Mrm-left-menu {
+        position: fixed;
+        opacity: 1 !important;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        overflow-x: hidden;
+
+    }
+
+    .no-scroll {
+        overflow: hidden;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+      
+        .Mrm-Presentaiotn-home,
+        .Mrm-PqPquoi {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+
+            .Mrm-prez-Img,
+            .Mrm-PourQ,
+            .MrM-textePourQAdu,
+            .Mrm-PersoAge {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+
+                .MRm-prezImg,
+                .Mrm-textPourqImg,
+                .Mrm-ImgtextePourQAdu,
+                .Mrm-persoAge-img {
+
+                    width: auto;
+
+                    .Mrm_ImgPrez1,
+                    .Mrm_ImgrefelxChild,
+                    .Mrm-imgAdulte,
+                    .Mrm-figure-persoAge {
+                        width: auto !important;
+
+                        .Mrm-img1-prezt,
+                        .Mrm-child-reflexes,
+                        .Mrm-img-adulte {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                }
+
+                .Mrm-text1,
+                .Mrm-textPourQEnf,
+                .MRm-textAdulte,
+                .Mrm-text-contain-PersoAge {
+                    width: auto;
+                }
+
+            }
+        }
+    }
+
+    .page-template-parlons-reflexes {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+        .Mrm-Pr {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+
+            .Mrm-prkso,
+            .Mrm-textDpR {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+
+                .MRm-imgC {
+                    .Mrm-figurePrcenter {
+                        width: 100%;
+
+                        .Mrm-Pr-img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        .Mrm-exemple-pr-section, .Mrm-reflex-pr-item { 
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%!important;
+
+            .Mrm-reflex-pr-content-textF,
+            .Mrm-reflex-pr-content-textSE {
+                width: auto;
+                height: auto;
+                //width: 21rem;
+                //height: 21rem;
+                border-radius: 1rem;
+                padding: 1rem;
+                font-size: 0.8rem;
+
+            }
+        }
+
+    }
+    .page-template-seance-type {
+        .Mrm-faq {
+            width: 100%;
+            padding: 0;
+        }
+        .Mrm-setypede {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+
+            .Mrm-setypede-articel, .Mrm-setypede-articelInv {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                margin: 3rem 0;
+                .Mrm-texte-setypede {
+                    width: auto;
+                }
+                .Mrm-setypede-containImg {
+                    width: auto;
+                    .Mrm-Img-setypede {
+                        margin-top: 2rem;
+                        width: 100%;
+                    }
+                }
+                
+            }
+            
+        
+        }
+    }
+    .page-template-contact {
+        display: flex;
+        flex-direction: column;
+        .Mrm-form-contact {
+            display: flex            ;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            .Mrm-contact-form {
+                textarea {
+                    width: 100%;
+                }
+            }
+        }
+        .Mrm-dayOpen {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            .Mrm-contact-hours, .Mrm-contact-conges, .Mrm-contact-info {
+                width: auto;
+                margin-bottom: 1rem;
+               
+            }
+        }
+    }
+}

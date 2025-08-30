@@ -1,0 +1,98 @@
+# Copyright (C) 2025 Romain Fourel
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Mes réflexes et moi - Custom Post Type 1.0.5\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mes-reflexes-et-moi-cpt\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-04-10T11:08:57+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: reflexes-cpt\n"
+
+#. Plugin Name of the plugin
+#: reflexes-cpt.php
+msgid "Mes réflexes et moi - Custom Post Type"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: reflexes-cpt.php
+msgid "https://web-byrom.com"
+msgstr ""
+
+#. Description of the plugin
+#: reflexes-cpt.php
+msgid "Custom Post Type pour \"Mes réflexes et moi\" - FAQ"
+msgstr ""
+
+#. Author of the plugin
+#: reflexes-cpt.php
+msgid "Romain Fourel"
+msgstr ""
+
+#: includes/post-types.php:11
+#: includes/post-types.php:12
+#: includes/post-types.php:22
+msgid "FAQ"
+msgstr ""
+
+#: includes/post-types.php:13
+msgid "Modifier la FAQ"
+msgstr ""
+
+#: includes/post-types.php:14
+msgid "Nouvelle FAQ"
+msgstr ""
+
+#: includes/post-types.php:15
+msgid "Voir la FAQ"
+msgstr ""
+
+#: includes/post-types.php:16
+msgid "Rechercher une FAQ"
+msgstr ""
+
+#: includes/post-types.php:17
+msgid "Aucune FAQ trouvée"
+msgstr ""
+
+#: includes/post-types.php:18
+msgid "Toutes les FAQs"
+msgstr ""
+
+#: includes/taxonomies.php:11
+msgid "Questions-Réponses"
+msgstr ""
+
+#: includes/taxonomies.php:12
+msgid "Question-Réponse"
+msgstr ""
+
+#: includes/taxonomies.php:13
+msgid "Rechercher Question-Réponse"
+msgstr ""
+
+#: includes/taxonomies.php:14
+msgid "Toutes les Questions-Réponses"
+msgstr ""
+
+#: includes/taxonomies.php:15
+msgid "Modifier Question-Réponse"
+msgstr ""
+
+#: includes/taxonomies.php:16
+msgid "Voir Question-Réponse"
+msgstr ""
+
+#: includes/taxonomies.php:17
+msgid "Ajouter une nouvelle Question-Réponse"
+msgstr ""
+
+#: includes/taxonomies.php:18
+msgid "Nom de la nouvelle Question-Réponse"
+msgstr ""

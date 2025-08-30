@@ -1,0 +1,102 @@
+/**** Styles Génériques *****/
+@use "../abstracts" as *; //chargment du fichier
+
+
+.Mrm-header {
+    position: relative;
+    padding: 0;
+    width: 100%;
+
+    .Mrm-nav-menu {
+        opacity: 1;
+        transition: opacity 1s, box-shadow 1s ease-in-out;
+        @include display-centre-row;
+        border-bottom: 1px solid $primaryWhite;
+        height: 8rem;
+        text-transform: capitalize;
+
+        .nav-logo {
+            position: relative;
+            box-sizing: content-box;
+            left: -10rem;
+            border-radius: 5px;
+            transition: box-shadow 1s ease-in-out;
+
+            .logo-img-header {
+                position: relative;
+                height: auto;
+                width: 8rem;
+            }
+        }
+        .Mrm-collapse {
+            width: 70rem;
+            height: auto;
+
+            .Mrm-primary-menu-nav {
+                position: relative;
+                margin: 0;
+                @include display-centre-nav;
+                font-size: $fontnavMenu;
+                color: $themBlack;
+
+                li {
+                    a {
+                        position: relative;
+                        span {
+                            transition: all ease-in-out 0.8s;
+                            &:hover {
+                                color: $primaryGreen;
+                            }
+                        }
+                    }
+                }
+                .MrM_m_active {
+                    //font-weight: bold;
+                    position: relative;
+
+                    a {
+                        position: relative;
+
+                        span {
+                            color: $primaryGreen;
+                        }
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            top: 7px;
+                            bottom: 0;
+                            left: -2.3rem;
+                            height: 30px;
+                            width: 30px;
+                            background-image: url('https://mesreflexesetmoi.web-byrom.com/wp-content/uploads/2025/03/logo-Mrm.sans_ombrepng.png');
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            background-position: center;
+
+
+                        }
+
+                    }
+
+                }
+
+            }
+        }
+
+    }
+
+    .sticky {
+        position: fixed;
+        z-index: 12;
+        width: 100%;
+        background-color: $ligthgray;
+        opacity: 0.7;
+        box-shadow: 1px 1px 20px white;
+
+        .nav-logo {
+            position: relative;
+            box-shadow: -1px 1px 20px 9px gray;
+
+        }
+    }
+}

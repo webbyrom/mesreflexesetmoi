@@ -1,0 +1,70 @@
+/*** styles de la page infos ***/
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+.page-template-contact {
+          @include display-column-wrap;
+
+          .Mrm_title-infos {
+                    margin: 4rem 0;
+                    text-transform: capitalize;
+          }
+
+          .Mrm-form-contact {
+                    margin: 3rem 0;
+
+                    .Mrm-contact-form {
+                              margin: 3rem 0;
+                              @include display-column-wrap;
+
+                              input {
+                                        margin-top: 1rem;
+                              }
+
+                              textarea {
+                                        width: 35rem;
+                                        margin-top: 1rem;
+                              }
+
+                              .wpcf7-submit {
+                                        padding: 0.7rem 1rem;
+                                        border-radius: 1rem;
+                                        background-color: $primaryGreen;
+                                        border: 1px solid $primaryGreen;
+                                        transition: background-color 0.5s;
+
+                                        &:hover {
+                                                  color: $primaryGreen;
+                                                  background-color: white;
+                                        }
+                              }
+                              .wpcf7-spinner {
+                                        display: contents;
+                              }
+                    }
+          }
+
+          .Mrm-dayOpen {
+                    @include display-centre-nav;
+                    margin: 3rem 0;
+
+                    .Mrm-contact-hours,
+                    .Mrm-contact-conges,
+                    .Mrm-contact-info {
+                              border: 1px solid $primaryGreen;
+                              padding: 1rem;
+                              border-radius: 1rem;
+                              width: 35rem;
+
+                              a {
+                                        color: $primaryGreen;
+                                        display: flex;
+                                        flex-direction: row;
+                                        flex-wrap: nowrap;
+                                        align-content: center;
+                                        justify-content: center;
+                                        align-items: center;
+                              }
+                    }
+          }
+}

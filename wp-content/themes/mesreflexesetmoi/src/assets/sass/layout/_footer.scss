@@ -1,0 +1,72 @@
+/**** Styles du Footer ******/
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *; //chargment du fichier
+
+.Mrm-footer {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid darkmagenta;
+    color: black;
+    font-size: large;
+    background-color: rgb(229, 226, 226);
+    border-top: 1px solid grey;
+    .footer_col {
+        .wp-block-group {
+            .wp-block-group__inner-container {
+                .widget_nav_menu {
+                    .menu-footer-container {
+                        .menu {
+                            li {
+                                a {
+                                    color: $themBlack;
+                                    transition: all ease-in-out 0.8s;
+                                    &:hover {
+                                        color: $primaryGreen;
+                                    
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #Mrm_scroll_top_button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+        z-index: 25;
+    }
+
+    .Mrm-scroll-totop {
+        background-color: purple;
+        display: inline-block;
+        color: white;
+        font-size: 24px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 50%;
+        text-decoration: none;
+        transition: background-color .5s ease-in-out;
+
+        &:hover {
+            background-color: darkcyan;
+            color: white;
+        }
+
+        .dashicons-arrow-up-alt2 {
+            font-size: 45px;
+            display: contents;
+            color: white;
+        }
+    }
+}

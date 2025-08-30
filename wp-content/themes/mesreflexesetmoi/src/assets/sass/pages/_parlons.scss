@@ -1,0 +1,229 @@
+/*** styles de la page Parlons réflexes ***/
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+.page-template-parlons-reflexes {
+    font-family: $fontPreflexesRegular;
+    .Mrm_title-pr {
+        margin: 4rem 0;
+    }
+
+    .Mrm-Pr {
+        @include display-body-home;
+        margin: 6rem 0;
+
+        .Mrm-title-ksko {
+            color: $sweetGreen;
+        }
+
+        .Mrm-prkso {
+            @include display-centre-nav;
+            --bs-gutter-x: 0;
+
+            .Mrm-textLPr,
+            .Mrm-textDpR {
+                padding: 1rem;
+                font-size: larger;
+                position: relative;
+                margin: 3rem 0;
+
+                &::before {
+                    content: "";
+                    width: 100%;
+                    height: 1px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: $greenBlack;
+                }
+
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: 1px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background-color: $greenBlack;
+                }
+            }
+
+            .MRm-imgC {
+                //div container-principal
+                position: relative;
+                width: auto;
+
+                .Mrm-figurePrcenter {
+                    //balise figure
+                    position: relative;
+                    width: 30rem;
+                    border-radius: 1rem;
+                    overflow: hidden;
+
+                    .Mrm-Pr-img {
+                        // balise image
+                        width: 30rem;
+                        border-radius: 1rem;
+                        filter: grayscale(100%);
+                        box-shadow: 1px 1px 12px black;
+                        transition:
+                            filter 1.6s ease-in-out,
+                            -webkit-mask 1.6s ease-in-out,
+                            mask-size 1.6s ease-in-out;
+
+                        /* Masque radial */
+                        -webkit-mask-image: radial-gradient(
+                            circle at center,
+                            rgba(0, 0, 0, 1) 0%,
+                            rgba(0, 0, 0, 0) 40%
+                        );
+                        -webkit-mask-repeat: no-repeat;
+                        -webkit-mask-size: 0% 0%;
+                        -webkit-mask-position: center;
+
+                        mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 40%);
+                        mask-repeat: no-repeat;
+                        mask-size: 0% 0%;
+                        mask-position: center;
+
+                        &:hover {
+                            filter: grayscale(0%);
+                            -webkit-mask-size: 200% 200%;
+                            mask-size: 200% 200%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .Mrm-exemple-pr-section {
+        @include display-body-home;
+        .Mrm-pr-exemple-contain-title {
+            width: max-content;
+            text-transform: uppercase;
+            margin-bottom: 3rem;
+        }
+        .Mrm-title-PRex {
+            margin: 3rem 0;
+        }
+        .Mrm-title-contain-exmeple-pr {
+            text-transform: uppercase;
+        }
+        .Mrm-reflex-pr-wrapper {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 3rem;
+            padding: 2rem 0;
+            margin-bottom: 4rem;
+        }
+        
+        .Mrm-reflex-pr-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 220px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        
+            &:hover {
+                transform: translateY(-5px) scale(1.05);
+            }
+        }
+        
+        .Mrm-title-type {
+            margin-bottom: 1rem;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: $purple;
+        }
+        
+        /* Style général des cercles */
+        .Mrm-reflex-pr-content-textF,
+        .Mrm-reflex-pr-content-textSE {
+            width: 30rem;
+            height: 30rem;
+            border-radius: 50%;
+            border: 1px solid $primaryWhite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1rem;
+            color: #fff;
+            padding: 3rem;
+            background: #ccc;
+            transition: box-shadow 0.6s ease-in-out;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        
+            &:hover {
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+            }
+        }
+        
+        /* Cercle 1 */
+        .Mrm-reflex-pr-item:nth-child(1) .Mrm-reflex-pr-content-textF {
+            background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+                     
+        
+            &:hover {
+               
+                background: linear-gradient(135deg, #98c7bf, #f5f5f5);
+            }
+        }
+        
+        /* Cercle 2 */
+        .Mrm-reflex-pr-item:nth-child(2) .Mrm-reflex-pr-content-textSE {
+            background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+        
+            &:hover {
+                background: linear-gradient(135deg, #f2c84c, #f5f5f5);
+            }
+        }
+        
+        /* Cercle 3 */
+        .Mrm-reflex-pr-item:nth-child(3) .Mrm-reflex-pr-content-textF {
+            background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+        
+            &:hover {
+                background: linear-gradient(135deg, #ec6e51, #f5f5f5);
+            }
+        }
+        
+        
+        
+    }
+    .Mrm-wdothis {
+        margin: 4rem 0;
+        border-top: 1px solid $purple;
+        width: auto;
+        //border: 1px solid $purple;
+        .MRm-wdothis-title {
+            margin: 3rem 0;
+            color: $purple;
+            font-size: xx-large;
+        }
+        .Mrm-button-pr {
+            width: 10rem;
+            border: 1px solid $primaryOrange;
+            border-radius: 1rem;
+            padding: 0.6rem 0.3rem;
+            box-shadow: none;
+            transition: border 0.4s, box-shadow ease-in-out;
+            a {
+                color: $deepRed;
+                transition: color 0.5s ease-in-out;
+                &:hover {
+                    
+                    color: $primaryOrange;
+                }
+            }
+            &:hover {
+                border: 1px solid $deepRed;
+                box-shadow: 1px 1px 4px darkgray;
+            }
+        }
+    }
+}
